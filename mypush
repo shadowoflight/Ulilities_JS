@@ -1,1 +1,71 @@
-my fisrt git bpush
+git clone <url>
+git cd to url
+git status
+git add -A
+git commit -m "message of commit"
+git pull
+git push -u origin master
+git log
+git log --
+touch .gitignore (mkaes a gitignore file)
+git init (to trace the file repo)
+git branch <name of new branch>  (to make new branch)
+git checkout <new branch>  (to change to that branch)
+git branch (to number of branch)
+-------------------------------------------------------------------------------------------------------------------
+------to make changes in a file and then undo it-----
+git diff (to see changes in a file u made)
+git checkout <file.name>
+git status--nothin
+git diff---nothin
+reload the file
+---------------------------------------------------------------------------------------------------------------------
+if commit message is wrong
+
+git --amend -m "new message"
+git log (changes in message sseen)
+----------------------------------------------------------------------------------------------------------------------
+if we forgot to commit a file and want to be it to be with the initial commit only we dont want to make any new commit
+eg. a gitignore file
+touch .gitignore
+git status
+git add .gitignore (added to staging area)
+git commit --amend
+we wnter area and add file gitignoire to the commit file
+git log
+git log --stat
+(gitignore becomes a part of wearlkier commit)
+--------------------------------------------------------------------------------------------------------------------
+to make the commit to another as u made it to wrong branch
+git log
+git checkout <another branch>
+git log
+git cherry-pick (hash code)
+git log (commit came to another branch)
+git checkout to earlier branch (to dleete thed commit)
+git reset --soft  (hash of first commit)(staging se not deleted and commit delted from log)
+git reset hash (default-mix)  (only in working directory and commit dleted from log)
+git reset --hard hash  (brings back to initial state dletees all tracked but leaves untracked files)
+git clean -df (deletes the untracked files/directoery)
+--------------------------------------------------------------------------------------------------------------------
+git reflog (gives your working what u did history)
+if u wanna get back to to a partcular stage 
+git checkout (hash just before u used reset)
+git branch backup
+bit branch 
+git checkout master
+git checkoput backup
+git log
+(new branch is already made bavkup)
+---------------------------------------------------------------------------------------------------------------------
+what bif other people have pulled your commits then what can you do - we can revert thye commits tyat is make new commit to reverse effct of eralier commit
+git revert (hash of commit u wnnna change)
+
+message save and exit
+git log
+(shows one new commit)
+and undid the changes is the commit
+
+
+
+
